@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  background-color: #3d5f59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+@media (max-width: 550px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.part-one {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  .part-one {
+    font-size: 10px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-right: none;
+  }
+}
+
+.part-one .location {
+  margin-bottom: 10px;
+}
+
+.part-one .phone {
+  margin-bottom: 10px;
+}
+
+.part-one .email {
+  margin-bottom: 10px;
+}
+
+.part-one .email span {
+  font-size: 15px;
+}
+
+@media (max-width: 550px) {
+  .part-one .email span {
+    font-size: 10px;
+  }
+}
+
+.part-one i {
+  font-size: 1.2rem;
+  color: teal;
+  margin-bottom: 5px;
+}
+
+.part-one p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 550px) {
+  .part-one p {
+    font-size: 14px;
+  }
+}
+
+.part-one span {
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: #777;
+}
+
+@media (max-width: 550px) {
+  .part-one span {
+    font-size: 10px;
+  }
+}
+
+.separation {
+  border: 1px solid teal;
+  height: 280px;
+}
+
+@media (max-width: 550px) {
+  .separation {
+    display: none;
+  }
+}
+
+.part-two {
+  padding: 10px;
+}
+
+.part-two h2 {
+  margin-bottom: 10px;
+  color: teal;
+  font-size: 1.2rem;
+}
+
+.part-two p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #777;
+}
+
+.part-two form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.part-two input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  caret-color: teal;
+}
+
+.part-two textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+  caret-color: teal;
+}
+
+.part-two input:focus {
+  outline: none;
+}
+
+.last {
+  background-color: teal;
+  color: #eee;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.last:hover {
+  cursor: pointer;
+  color: teal;
+  background-color: #eee;
+}
+
+::selection {
+  background-color: teal;
+  color: #eee;
+}
